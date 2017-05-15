@@ -13,12 +13,26 @@
 
     <div class="field">
       <%= form.label :age %>
-      <%= form.number_field :age, id: :feedback_form_age %>
+      <%= form.number_field :age, id: :feedback_form_age, required: true, min: 17, max: 65 %>
     </div>
 
     <div class="field">
       <%= form.label :name %>
-      <%= form.text_field :name, id: :feedback_form_name %>
+      <%= form.text_field :name, id: :feedback_form_name, required: true, pattern: '^[A-Z][a-z]*\s[A-Z][a-z]*$', title: 'Two space separated upcase words please' %>
+    </div>
+    <div class="field">
+      <%= form.label :appointment_date do %>
+          Appointment date (format: dd.mm.yyyy)
+      <% end %>
+      <%= form.date_field :appointment_date, id: :feedback_form_appointment_date, required: true %>
+    </div>
+
+    <div class="field">
+      <%= form.label :attachment do %>
+          Attachment
+          <%= ': ' + form.object.file_name if form.object.file_name %>
+      <% end %>
+      <%= form.file_field :attachment, id: :feedback_form_attachment %>
     </div>
 
     <div class="actions">
