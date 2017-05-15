@@ -1,24 +1,17 @@
-# README
+Тестовое задание
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+При решении задания используйте Ruby on Rails.
 
-Things you may want to cover:
+Задание.
+Реализовать страницу с формой обратной связи. 
+Форма должна проверятся на валидность на клиенте и на сервере - возраст: от 17 до 65,
+поле имя должно содержать два слова, оба с большой буквы;
+Реализовать возможность прикрепления и загрузки файла (например, файл-резюме) к форме;
+Данные с формы должны сохраниться в базе данных;
+Создать страничку уведомления о правильной отправке формы. С текстом «Мы ждем Вас в (date,
+которое ввел пользователь в форме)»;
+Всю сделанную работу выложить на свой аккаунт в Github.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Пожелания.
+Написание тестов будет плюсом.
+Используйте уже готовые gem-ы, если есть такая возможность.

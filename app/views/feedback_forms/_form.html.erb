@@ -1,0 +1,27 @@
+<%= form_with(model: feedback_form, local: true) do |form| %>
+    <% if feedback_form.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(feedback_form.errors.count, "error") %> prohibited this feedback_form from being saved:</h2>
+
+          <ul>
+            <% feedback_form.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :age %>
+      <%= form.number_field :age, id: :feedback_form_age %>
+    </div>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :feedback_form_name %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+<% end %>

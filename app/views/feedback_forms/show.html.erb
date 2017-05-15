@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @feedback_form.age %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @feedback_form.name %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_form_path(@feedback_form) %> |
+<%= link_to 'Back', feedback_forms_path %>
