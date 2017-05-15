@@ -17,7 +17,7 @@ class FeedbackFormsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create feedback_form" do
     assert_difference('FeedbackForm.count') do
-      post feedback_forms_url, params: {feedback_form: {age: @feedback_form.age, name: @feedback_form.name}}
+      post feedback_forms_url, params: {feedback_form: {age: @feedback_form.age, name: @feedback_form.name, appointment_date: @feedback_form.appointment_date}}
     end
 
     assert_redirected_to feedback_form_url(FeedbackForm.last)
@@ -40,6 +40,8 @@ class FeedbackFormsControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy feedback_form" do
     assert_difference('FeedbackForm.count', -1) do
+      @feedback_form.attachment = nil
+      @feedback_form.save!
       delete feedback_form_url(@feedback_form)
     end
 

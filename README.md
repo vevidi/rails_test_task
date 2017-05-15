@@ -15,3 +15,17 @@
 Пожелания.
 Написание тестов будет плюсом.
 Используйте уже готовые gem-ы, если есть такая возможность.
+
+---------------------------------------------------------------
+
+Run app:
+1. Edit config/database.yml
+                  username: pguser
+                  password: '1111'
+                  host: localhost
+                  port: 5432
+2.  rake db:setup
+3.  rails s
+
+Run tests:
+    rake test
