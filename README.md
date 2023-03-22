@@ -1,20 +1,21 @@
-Тестовое задание
+Test task description
 
-При решении задания используйте Ruby on Rails.
+Please use Ruby on Rails to solve the task.
 
-Задание.
-Реализовать страницу с формой обратной связи. 
-Форма должна проверятся на валидность на клиенте и на сервере - возраст: от 17 до 65,
-поле имя должно содержать два слова, оба с большой буквы;
-Реализовать возможность прикрепления и загрузки файла (например, файл-резюме) к форме;
-Данные с формы должны сохраниться в базе данных;
-Создать страничку уведомления о правильной отправке формы. С текстом «Мы ждем Вас в (date,
-которое ввел пользователь в форме)»;
-Всю сделанную работу выложить на свой аккаунт в Github.
+Task:
+Implement a page with a feedback form.
+The form should be validated both client-side and server-side, with the following requirements:
 
-Пожелания.
-Написание тестов будет плюсом.
-Используйте уже готовые gem-ы, если есть такая возможность.
+    Age: between 17 and 65
+    Name field should contain two words, both with capital letters
+    Allow attaching and uploading a file (e.g. resume) to the form
+    Form data should be saved in the database.
+    Create a notification page confirming that the form was submitted correctly. The text should read "We are waiting for you on (date entered by the user in the form)".
+    Upload all the completed work to your Github account.
+
+Preferences:
+Writing tests would be a plus.
+Use ready-made gems if possible.
 
 ---------------------------------------------------------------
 
